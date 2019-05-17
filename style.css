@@ -5,3 +5,9 @@ body {
 p {
   color: red;
 }
+
+img {
+  border-radius: 8px;
+  	height: 250px;
+	width: 250px;
+}
