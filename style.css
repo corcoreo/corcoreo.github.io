@@ -12,4 +12,8 @@ img {
 	width: 100%;
 	max-width:200px;
 	max-height:250px;
+
+	display:grid;
+	grid-area:right;
+	text-align:left;
 }
