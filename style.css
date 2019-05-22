@@ -1,19 +1,45 @@
 body {
-  background-color:#123;
+  background-color:#1C2833;
+  color:white;
+  font-family: 'Verdana', sans-serif;
 }
 
 p {
-  color: red;
+	padding-right: 50%;
+/*  	color: white;
+*/}
+
+#container{
+
+	height:100%;
+	width:100%;
+
 }
 
-img {
-  border-radius: 8px;
+#holder{
+	display: grid;
+	grid-template-areas: 'left . right';
+	border-bottom: 2px solid #fff;
+	padding-bottom: 50px;
+}
+
+#holder > .picture{
+	grid-area:right;
+	text-align: left;
+	padding-top: 25px;
+}
+
+.picture > .pic{
+	border-radius: 8px;
   	height: 100%;
 	width: 100%;
 	max-width:200px;
 	max-height:250px;
+}
 
-	display:grid;
-	grid-area:right;
-	text-align:left;
+#holder > #aboutme{
+	padding-left: 150px;
+	padding-top: 25px;
+	grid-area:left;
+/*	text-align: left;*/
 }
