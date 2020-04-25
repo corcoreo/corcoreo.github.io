@@ -1,6 +1,6 @@
 body {
-  background-color:#1C2833;
-  color:white;
+  background-color:#6B7A8F;
+  color:black;
   font-family: 'Verdana', sans-serif;
 }
 
@@ -16,30 +16,63 @@ p {
 
 }
 
-#holder{
+#welcome{
 	display: grid;
 	grid-template-areas: 'left . right';
 	border-bottom: 2px solid #fff;
 	padding-bottom: 50px;
 }
 
-#holder > .picture{
+#welcome > .picture{
 	grid-area:right;
 	text-align: left;
-	padding-top: 25px;
+	padding-top: 50px;
+	padding-left: 170px;
 }
 
 .picture > .pic{
 	border-radius: 8px;
-  	height: 100%;
-	width: 100%;
+/*  	height: 100%;
+	width: 100%;*/
 	max-width:200px;
 	max-height:250px;
 }
 
-#holder > #aboutme{
+#welcome > #aboutme{
 	padding-left: 150px;
 	padding-top: 25px;
 	grid-area:left;
 /*	text-align: left;*/
 }
+
+#workexp{
+	margin-bottom: 3px;
+}
+
+.projects{
+	display:grid;
+	grid-template-areas: 'left . right';
+}
+
+.projetcs > .worklogo{
+	grid-area: right;
+	text-align: left;
+}
+
+.worklogo > .logo{
+	padding-top: 140px;
+	padding-left: 200px;
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.projects > #duties{
+	grid-area: left;
+	padding-left: 150px;
+	padding-top: 60px;
+}
+
+
+
+
+
