@@ -13,13 +13,16 @@
 		function picFunction(){
 			document.getElementById("aboutme").innerHTML = "<h1> Eoin Corcoran </h1>Hello. You found a secret within my website. Congrats, I am impressed. &nbsp &nbsp &nbsp";
 
+			var picClass = document.getElementsByClassName("pic");
+			picClass.onClick(location.reload());
+
 		}
 
 
 		function dutiesswitch(number){
 			switch(number){
 				case 1:
-				document.getElementById("dutiestext").innerHTML = "<h2> Glanbia </h2><h3> IT Business Analyst</h3>Glanbia duties to come.....";
+				document.getElementById("dutiestext").innerHTML = "<h2> Glanbia </h2><h3> IT Business Analyst Associate</h3><ul><li>Manage relationships with key business partners to identify <br>and address issues and provide timely support for Glanbia’s HCM Systems – SAP and SuccessFactors.</li><li>Work with cross-functional teams to resolve business process issues <br>and be constantly identifying business process improvement opportunities.</li><li>Administrator for Glanbia’s SuccessFactors system performing activities <br>such as: being the point of contact between SAP and Talent Acquisition, <br>researching potential functionalities, reviewing and implementing SAP bi-yearly system enhancements, <br>and conducting regular reporting and analytics.</li><li>Identify the training needs of end users of SuccessFactors <br>and provide the necessary system and end user training and in-depth documentation.</li><li>Appointed as the lead of a team of three on a key project which <br>spanned 4 months to develop and implement a new streamlined graduate application process for Talent Acquisition.</li></ul>";
 				break;
 				case 2:
 				document.getElementById("dutiestext").innerHTML = "<h2> Global Payments Inc.</h2><h3> Integration and Support Operations Analyst </h3><ul><li>Account management for new SME accounts and existing <br>High Value Merchants, and assisting with integrating the Payment Gateway</li><li>Troubleshooting payment and coding errors that may occur and assisting <br>with integrations</li><li>Supporting developers with server connections, online shopping carts and <br>payment gateway plugins.</li><li>Providing support to merchants on reporting and reconciliation tools, <br>fraud management solutions and card tokenization.</li><li>Using internal CRM and agile project management tools to escalate, <br>track and resolve technical issues</li></ul>	";
@@ -45,7 +48,7 @@
 				Hello. My name is Eoin. <br>
 				I am an IT Business Analyst currently working for Glanbia in Dublin, Ireland.<br><br> 
 				See below for a snapshot of my experience and skills :) <br> <br>
-				Please feel free to reach out to using the following options find out more! 
+				Please feel free to reach out using the following options find out more about me! 
 				<!-- Hey! My name is Eoin. I have recently moved to San Francisco, California <br>from Dublin, Ireland!
 					<br>I am a 23 year old recent graduate from Trinity College Dublin, where I <br>obtained a Bachelors Degree in Computer Science and Business. I am also<br> a developer with experience in both web and mobile development.
 					<br><br>Below you can find some of my recent experience and skills.
