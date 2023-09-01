@@ -10,8 +10,28 @@
 
 
 	<script>
-		function picFunction(){
-			document.getElementById("aboutme").innerHTML = "<h1> Eoin Corcoran </h1>Hello. You found a secret within my website. Congrats, I am impressed. &nbsp &nbsp &nbsp ";
+		var originalText = "<h1> Eoin Corcoran </h1>Hello. My name is Eoin. <br><br> I am currently working in ServiceNow, as a Customer Success Manager. <br><br> Currently based in Dublin, Ireland.<br><br> See below for a snapshot of my experience and skills :) <br> <br>Feel free to reach out using the following options to find out more about me! ";
+		var newText = "<h1> Eoin Corcoran </h1>Hello. You found a secret within my website. Congrats, I am impressed. &nbsp &nbsp &nbsp ";
+		var isTextReplaced = false;
+
+		function toggleText (){
+			var textElement = document.getElementById("aboutme").innerHTML;
+
+			if (isTextReplaced){
+				//textElement = originalText;
+				document.getElementById("aboutme").innerHTML = originalText;
+			} else{
+				//textElement= newText;
+				document.getElementById("aboutme").innerHTML = newText;
+			}
+			isTextReplaced = !isTextReplaced;
+		}
+
+
+
+
+		// function picFunction(){
+			// document.getElementById("aboutme").innerHTML = "<h1> Eoin Corcoran </h1>Hello. You found a secret within my website. Congrats, I am impressed. &nbsp &nbsp &nbsp ";
 
 			// document.getElementById("contact") = "<div id = "contact"><a href="corcoreo.github.io"><img class="contactbutton" src="backarrow.png" alt="back"></a>";
 			// var picClass = document.getElementsByClassName("pic");
@@ -19,22 +39,25 @@
 
 						// document.getElementById("aboutme").innerHTML = "<h1> Eoin Corcoran </h1>Hello. You found a secret within my website. Congrats, I am impressed. &nbsp &nbsp &nbsp";
 
-		}
+		//}
 
 
 		function dutiesswitch(number){
 			switch(number){
 				case 1:
-				document.getElementById("dutiestext").innerHTML = "<h2> Glanbia </h2><h3> IT Business Analyst Consultant</h3><ul><li>Asked to come back to consult on a crucial retrofit piece for Glanbia’s Global HR transformation project.</li><li>Collaborate with business users, product owners, program managers and business partners to gather <br>and identify requirements for Glanbia’s HCM systems, and further define and document these requirements.</li><li>Lead follow up requirements discussions and review sessions as necessary to refine requirements and capture <br>any changes.</li><li>Develop and implement a crucial retrofit plan for Glanbia’s HCM system to ensure a seamless integration <br>of new technologies.</li><li>Carry out unit, regression and integration testing and document errors that arise. <br>Prepare documentation then and train end users for user acceptance testing.</li></ul><br><br><h3> IT Business Analyst Associate</h3><ul><li>Manage relationships with key business partners to identify and address issues and provide timely support <br>for Glanbia’s HCM Systems – SAP and SuccessFactors.</li><li>Work with cross-functional teams to resolve business process issues and be constantly identifying business <br>process improvement opportunities.</li><li>Administrator for Glanbia’s SuccessFactors system performing activities such as: being the point of contact <br>between SAP and Talent Acquisition, researching potential functionalities, reviewing and implementing SAP <br> bi-yearly system enhancements, and conducting regular reporting and analytics.</li><li>Identify the training needs of end users of SuccessFactors and provide the necessary system and end user <br>training and in-depth documentation.</li><li>Appointed as the lead of a team of three on a key project which spanned 4 months to develop and implement <br>a new streamlined graduate application process for Talent Acquisition.</li></ul>";
+				document.getElementById("dutiestext").innerHTML = "<h2> Glanbia </h2><h3> IT Business Analyst Consultant</h3><ul><li>Contracted to consult on a crucial retrofit piece for Glanbia’s Global HR transformation project.</li><br><li>Collaborate with business users, product owners, program managers and business partners to gather <br>and identify requirements for Glanbia’s HCM systems, and further define and document these requirements.</li><br><li>Lead follow up requirements discussions and review sessions as necessary to refine requirements and capture <br>any changes.</li><br><li>Develop and implement the retrofit plan for Glanbia’s HCM system to ensure a seamless integration <br>of new technologies.</li><br><li>Carry out unit, regression and integration testing and document errors that arise. <br>Prepare documentation then and train end users for user acceptance testing.</li></ul><br><br><h3> IT Business Analyst Associate</h3><ul><li>Manage relationships with key business partners to identify and address issues and provide timely support <br>for Glanbia’s HCM Systems – SAP and SuccessFactors.</li><br><li>Work with cross-functional teams to resolve business process issues and be constantly identifying business <br>process improvement opportunities.</li><br><li>Administrator for Glanbia’s SuccessFactors system performing activities such as: being the point of contact <br>between SAP and Talent Acquisition, researching potential functionalities, reviewing and implementing SAP <br> bi-yearly system enhancements, and conducting regular reporting and analytics.</li><br><li>Identify the training needs of end users of SuccessFactors and provide the necessary system and end user <br>training and in-depth documentation.</li><br><li>Appointed as the lead of a team of three on a key project which spanned 4 months to develop and implement <br>a new streamlined graduate application process for Talent Acquisition.</li></ul>";
 				break;
 				case 2:
-				document.getElementById("dutiestext").innerHTML = "<h2> Global Payments Inc.</h2><h3> Integration and Support Operations Analyst </h3><ul><li>Account management for new SME accounts and existing High Value Merchants, and assisting with <br>integrating the Payment Gateway.</li><li>Troubleshooting payment and coding errors that may occur and assisting with integrations.</li><li>Supporting developers with server connections, online shopping carts and payment gateway plugins.</li><li>Providing support to merchants on reporting and reconciliation tools, fraud management solutions and <br>card tokenization.</li><li>Using internal CRM and agile project management tools to escalate, track and resolve technical issues.</li></ul>	";
+				document.getElementById("dutiestext").innerHTML = "<h2> Global Payments Inc.</h2><h3> Integration and Support Operations Analyst </h3><ul><li>Account management for new SME accounts and existing High Value Merchants, and assisting with <br>integrating the Payment Gateway.</li><br><li>Troubleshooting payment and coding errors that may occur and assisting with integrations.</li><br><li>Supporting developers with server connections, online shopping carts and payment gateway plugins.</li><br><li>Providing support to merchants on reporting and reconciliation tools, fraud management solutions and <br>card tokenization.</li><br><li>Using internal CRM and agile project management tools to escalate, track and resolve technical issues.</li></ul>	";
 				break;
 				case 3:
-				document.getElementById("dutiestext").innerHTML = "<h2> Cal Youth and Outdoor Programs</h2><h3> Camp Director </h3><ul><li>Lead and run a program for over 500 families and 30 staff members over the course of 10 weeks <br>within a fixed budget.</li><li>Use Excel to create a budget for 30 staff, 500 camper families and outside expenses earning over <br>$50,000 over 10 weeks.</li><li>Lead a group of 30 staff members in daily schedules and tasks being run simultaneously at separate locations.</li><li>Develop a program and schedule for 120 campers per week and oversee all facets of this program.</li><li>Plan and lead staff meetings, trainings, and parent orientations for groups of up to 60 people.</li></ul>";
+				document.getElementById("dutiestext").innerHTML = "<h2> Cal Youth and Outdoor Programs</h2><h3> Camp Director </h3><ul><li>Lead and run a program for over 500 families and 30 staff members over the course of 10 weeks <br>within a fixed budget.</li><br><li>Use Excel to create a budget for 30 staff, 500 camper families and outside expenses earning over <br>$50,000 over 10 weeks.</li><br><li>Lead a group of 30 staff members in daily schedules and tasks being run simultaneously at separate locations.</li><br><li>Develop a program and schedule for 120 campers per week and oversee all facets of this program.</li><br><li>Plan and lead staff meetings, trainings, and parent orientations for groups of up to 60 people.</li></ul>";
 				break;
 				case 4:
-				document.getElementById("dutiestext").innerHTML = "<h2> GAP </h2><h3> Sales Assistant </h3><ul><li>Greet and converse with all customers in order to create a positive and friendly atmosphere.</li><li>Maintain appropriate clothes presentation standards on the shop floor.</li><li>Meet and exceed both team and individual key performance indicators.</li><li>Use the till for customer transactions.</li><li>Cash up all tills and the entire store at the end of the night.</li></ul>";
+				document.getElementById("dutiestext").innerHTML = "<h2> GAP </h2><h3> Sales Assistant </h3><ul><li>Greet and converse with all customers in order to create a positive and friendly atmosphere.</li><br><li>Maintain appropriate clothes presentation standards on the shop floor.</li><br><li>Meet and exceed both team and individual key performance indicators.</li><br><li>Use the till for customer transactions.</li><br><li>Cash up all tills and the entire store at the end of the night.</li></ul>";
+				break;
+				case 5: 
+					document.getElementById("dutiestext").innerHTML = "<h2> ServiceNow </h2><h3> Associate Customer Success Manager </h3><ul><li>Proactively manage a portfolio of 50+ high-value customers, with a total NACV of $51 million+,<br> ensuring their success and satisfaction with ServiceNow products and services.</li><br><li>Act as customer’s post-sales primary point of contact for one of ServiceNow’s fastest growing<br> products, ServiceNow Impact - conducting training sessions, product demonstrations<br> and workshops to educate clients.</li><br><li>Collaborate closely with internal cross-functional teams on multiple projects to help grow <br>a new product and act as the voice of the customer to relay sentiment, feedback, and use cases.</li><br><li>Continuously monitor and analyze customer metrics such as platform health data,<br> usage/adoption data, and support cases to provide actionable insights and drive value.</li><br><li>Develop and execute strategic account plans resulting in net customer retention rate of 280%, <br>average YoY platform health scores increase of 12%, and average YoY critical applications adoption<br> increase of 60%.</li><br><li>Host and lead monthly onboarding webinar sessions for all new ServiceNow customers <br> across EMEA and AMS.</li></ul>"
 				break;
 			}	
 		}
@@ -43,22 +66,24 @@
 	<div id = "container">
 		<div id = "welcome">
 			<div class = "picture">
-				<img class="pic" src="me.jpg" alt="Just a picture of me" onClick="picFunction()">
+				<img class="pic" src="me2.jpg" alt="Just a picture of me" onClick="toggleText()">
 			</div>
 			<div id = "aboutme">
 				<h1> Eoin Corcoran </h1>
 
 				Hello. My name is Eoin. <br><br>
-				I am a passionate and motivated person, currently seeking a new opportunity. Living in Dublin, Ireland.<br><br> 
+				I am currently working in ServiceNow, as a Customer Success Manager. <br><br>
+				Currently based in Dublin, Ireland.<br><br> 
 				See below for a snapshot of my experience and skills :) <br> <br>
-				Please feel free to reach out using the following options find out more about me! 
+				Feel free to reach out using the following options to find out more about me! 
+
+			</div>
 				
 				<div id = "contact">
 					<a href="mailto:corcoreo@gmail.com?subject=Github.io: General Contact"><img class="contactbutton" src="gmail.png" alt="email"></a>
 					<a href="https://linkedin.com/in/eoin-corcoran"><img class="contactbutton" src="lilogo.png" alt="LinkedIn"></a>
 				</div>
 
-			</div>
 		</div>
 
 
@@ -66,6 +91,12 @@
 			Please click the logos below and scroll down to see a description of my experience in the related role!
 		</div>
 
+		<div id = "ServiceNow">
+			<div class = "picture">
+				<img class="snpicture" src="ServiceNow.png" alt="ServiceNow Logo" onclick="dutiesswitch(5)">
+			</div>
+
+		</div>
 		<div id = "workexp">
 			<div class = "projects">
 				<div class = "worklogoleft">
